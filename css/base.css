@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Roboto Light", sans-serif;
+    outline: none;
+    list-style: none;
+}
+
+a.header-top-link {
+    color: #6E7284;
+}
+
+a.header-top-link.active {
+    color: #F04716;
+}
+
+a.call {
+    color: #4788FF;
+}
+
+a.sale {
+    color: #FFFA2F !important;
+}
+
+.button {
+    border: 1px solid #DEDFE7;
+    border-radius: 10px;
+}
+
+.not-visible {
+    display: none !important;
+}
+
+.container {
+    margin: 0 370px 0 370px;
+}
+
+.top-header {
+    background-color: #F4F5F8;
+}
+
+.top-header .content {
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.top-header .first {
+    width: 10%;
+}
+
+.top-header .second,
+.top-header .third,
+.address,
+.top-header .content,
+.mid-header,
+.mid-header .first,
+.mid-header .third,
+.bottom-header .content,
+.bottom-header a {
+    display: flex;
+    align-items: center;
+}
+
+.top-header .second {
+    width: 55%;
+    justify-content: space-between;
+}
+
+.top-header .third {
+    width: 20%;
+}
+
+.top-header .third p {
+    color: #36383F;
+}
+
+.top-header .third a,
+.top-header .third p {
+    font-size: 15px;
+}
+
+.top-header .third p:first-child {
+    margin-right: 20px;
+}
+
+.address img {
+    height: 20px;
+    width: 20px;
+}
+
+.address span {
+    color: #36383F;
+}
+
+.mid-header {
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.mid-header .first {
+    width: 25%;
+}
+
+.mid-header .first img {
+    margin-right: 10px;
+}
+
+.mid-header .first .site-name {
+    color: #F04716;
+}
+
+.mid-header .first .site-description {
+    color: #0A4ECB;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.mid-header .second {
+    width: 40%;
+    position: relative;
+}
+
+.mid-header .second .search {
+    padding: 15px 20px 15px 50px;
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid #DEDFE7;
+    transition: 1s all ease;
+}
+
+.mid-header .second .search:hover,
+.mid-header .second .search:focus,
+.mid-header .third .button:hover,
+.mid-header .third .button:focus,
+.mid-header .third .button:hover svg path {
+    border-color: #4788FF;
+}
+
+.mid-header .third .button.favorite:hover svg path {
+    stroke: #4788FF;
+}
+
+.mid-header .third .button.cart:hover svg path {
+    fill: #4788FF;
+}
+
+.mid-header .third .button:active,
+.mid-header .third .button:active svg path {
+    background-color: #0A4ECB;
+}
+
+.mid-header .third .button.favorite:active svg path {
+    stroke: #ffffff;
+}
+
+.mid-header .third .button.cart:active svg path,
+.mid-header .third .button.cart:active p,
+.mid-header .third .button.cart:active p span {
+    fill: #ffffff;
+    color: #ffffff;
+}
+
+.mid-header .second img {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+}
+
+.mid-header .second .submit {
+    border: none;
+    background-color: #fff;
+    color: #4788FF;
+    font-size: 16px;
+    position: absolute;
+    top: 14px;
+    right: 20px;
+}
+
+.mid-header .third {
+    width: 20%;
+    justify-content: space-evenly;
+}
+
+.mid-header .third .button {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    transition: 1s all ease;
+}
+
+.mid-header .third .button p {
+    margin-left: 10px;
+    color: #6E7284;
+    font-size: 13px;
+}
+
+.bottom-header {
+    background-color: #0A4ECB;
+}
+
+.bottom-header .bottom-header-link:hover,
+.bottom-header .dropdown:hover {
+    background-color: #4788FF;
+}
+
+.bottom-header .content {
+}
+
+.bottom-header a,
+.bottom-header .dropdown {
+    padding: 17px 30px;
+    color: #ffffff;
+    transition: 1s all ease;
+}
+
+.bottom-header .dropdown span {
+    margin: 0 10px;
+}
+
+.bottom-header .bottom-header-link {
+    width: 15%;
+}
+
+.bottom-header .dropdown {
+    width: 25%;
+    position: relative;
+}
+
+.bottom-header .dropdown .dropdown-menu {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 54px;
+    background-color: #1D1E22;
+    width: 265px;
+    transition: 1s all ease;
+}
+
+.bottom-header .dropdown .dropdown-menu a:hover {
+    background: linear-gradient(to right, #1D1E22 15%, #0A4ECB);
+}
