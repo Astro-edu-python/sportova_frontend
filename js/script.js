@@ -30,3 +30,15 @@ let inputSearch = document.querySelector('.mid-header .second .search')
 inputSearch.addEventListener('keydown', toggleSearchBtn)
 let menuDropdown = document.querySelector('.bottom-header .dropdown')
 menuDropdown.addEventListener('click', toggleMenuHeaderDropdown)
+
+const swiper = new Swiper('.banner .slide-banner .swiper', {
+    slidesPerView: 1,
+    pagination: {
+        el: ".slide-banner-pagination",
+        type: "fraction",
+    },
+    navigation: {
+        nextEl: ".slide-banner-button-next",
+        prevEl: ".slide-banner-button-prev",
+    },
+});

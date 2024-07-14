@@ -1,0 +1,139 @@
+@import "base.css";
+
+body {
+    background-color: #F4F5F8;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.banner .slide-banner {
+    width: 66%;
+    position: relative;
+}
+
+.slide-banner-wrapper {
+    width: 100% !important;
+    height: 500px !important;
+}
+
+.banner .slide-banner .navigation {
+    position: absolute;
+    width: 25%;
+    right: 0;
+    top: 400px;
+    z-index: 1000;
+}
+
+.slide-banner-pagination,
+.slide-banner-button-prev,
+.slide-banner-button-next {
+    z-index: 1000;
+}
+
+.slide-banner-pagination {
+    text-align: center;
+    color: #6f727b !important;
+    font-weight: bold;
+}
+
+.slide-banner-button-prev,
+.slide-banner-button-next {
+    background-color: #36383F;
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
+    color: white !important;
+}
+
+.slide-banner-button-prev::after,
+.slide-banner-button-next::after {
+    font-size: 22px !important;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner .extra-banner {
+    width: 32%;
+}
+
+.slide-banner-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slide-banner-slide .slide-header,
+.slide-banner-slide .slide-title {
+    width: 65%;
+}
+
+.slide-banner-slide img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 100%;
+}
+
+.slide-banner-slide .slide-info {
+    padding: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+    height: 80%;
+}
+
+.slide-banner-slide .slide-info h2 {
+    font-size: 40px;
+    width: 100%;
+    color: #0A4ECB;
+}
+
+.slide-banner-slide .slide-info .slide-title {
+    font-size: 15px;
+    width: 100%;
+    color: #36383F;
+}
+
+.slide-link.button {
+    padding: 20px 36px;
+    width: 45%;
+    text-align: center;
+    background: linear-gradient(to right, #F04716 0%, #FFC62F 100%);
+    border: none;
+    color: white;
+}
+
+.extra-banner-card {
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.extra-banner-card .extra-banner-card__header {
+    width: 65%;
+    margin-bottom: 20px;
+    color: #36383F;
+}
+
+.extra-banner-card .extra-banner-card__title {
+    width: 50%;
+    margin-bottom: 40px;
+    color: #36383F;
+}
+
+.extra-banner-card .extra-banner-card__link {
+    color: #0A4ECB;
+}

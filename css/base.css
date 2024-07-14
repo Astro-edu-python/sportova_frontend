@@ -205,9 +205,6 @@ a.sale {
     background-color: #4788FF;
 }
 
-.bottom-header .content {
-}
-
 .bottom-header a,
 .bottom-header .dropdown {
     padding: 17px 30px;
@@ -236,8 +233,9 @@ a.sale {
     background-color: #1D1E22;
     width: 265px;
     transition: 1s all ease;
+    z-index: 1000;
 }
 
 .bottom-header .dropdown .dropdown-menu a:hover {
-    background: linear-gradient(to right, #1D1E22 15%, #0A4ECB);
+    background: linear-gradient(to right, #1D1E22 0%, #0A4ECB 100%);
 }
