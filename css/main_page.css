@@ -2,6 +2,7 @@
 
 body {
     background-color: #F4F5F8;
+    padding-bottom: 200px;
 }
 
 .banner {
@@ -9,6 +10,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .banner .slide-banner {
@@ -136,4 +138,151 @@ body {
 
 .extra-banner-card .extra-banner-card__link {
     color: #0A4ECB;
+}
+
+.content-section {
+    margin-bottom: 50px;
+}
+
+.content-section .categories {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.content-section .categories {
+    margin-top: 20px;
+}
+
+.content-section .categories .category-card {
+    width: 20%;
+    margin-left: 10px;
+}
+
+.content-section .swiper {
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+.products-slide {
+    position: relative;
+}
+
+.content-section .navigation .slide-banner-button-prev {
+    left: -35px;
+    position: absolute;
+}
+
+.content-section .navigation .slide-banner-button-next {
+    right: -75px;
+    position: absolute;
+}
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+    width: 20%;
+    position: relative;
+}
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card .add-to-favorite {
+    position: absolute;
+    right: 16px;
+    border: 1px solid #DEDFE7;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card .add-to-favorite:hover {
+    background-color: #F04716;
+    border: none;
+}
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card .add-to-favorite:hover path:first-child {
+    stroke: white;
+}
+.content-section .products-slide .swiper .products-slide-wrapper .product-card .add-to-favorite:hover path:last-child {
+    fill: white;
+    stroke: #F04716;
+}
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card:not(:last-child) {
+    margin-right: 25px;
+}
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card img {
+    max-width: 100%;
+    max-height: 340px;
+    margin-bottom: 10px;
+}
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card .product-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card .product-info > p {
+    color: #36383F;
+    margin-bottom: 35px;
+    transition: all .3s ease-in-out;
+}
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card:hover .product-info > p {
+    color: #0A4ECB;
+}
+
+.add-to-cart svg {
+    width: 50px;
+    height: 50px;
+}
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card .product-info .product-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card .product-info .product-actions
+.product-prices p:first-child {
+    color: #A3A6B2;
+}
+
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card .product-info .product-actions
+.product-prices p:last-child {
+    color: #36383F;
+}
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card .product-info .product-actions
+.add-to-cart svg {
+    border: 1px solid #DEDFE7;
+    border-radius: 10px;
+}
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card .product-info .product-actions
+.add-to-cart:hover svg {
+    background-color: #F04716;
+    border: 1px solid #F04716;
+}
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card .product-info .product-actions
+.add-to-cart:hover svg path {
+    fill: white;
+}
+
+.content-section .products-slide .swiper .products-slide-wrapper .product-card .product-info .product-actions
+.add-to-cart:hover svg path:last-child {
+    stroke: #F04716;
 }
