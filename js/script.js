@@ -63,3 +63,21 @@ document.querySelectorAll('.product-card').forEach((element) => {
         element.querySelector('.add-to-favorite').classList.add('not-visible')
     })
 })
+
+let childSwiper = new Swiper(".examples .photo-examples .photo-examples-swiper-navigation", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+
+new Swiper(".examples .photo-examples .photo-examples-swiper-main", {
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".photo-examples-swiper-main .photo-examples-swiper-button-next",
+        prevEl: ".photo-examples-swiper-main .photo-examples-swiper-button-prev",
+    },
+    thumbs: {
+        swiper: childSwiper,
+    },
+});

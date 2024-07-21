@@ -33,7 +33,9 @@ body {
 
 .slide-banner-pagination,
 .slide-banner-button-prev,
-.slide-banner-button-next {
+.slide-banner-button-next,
+.photo-examples .photo-examples-swiper-button-next,
+.photo-examples .photo-examples-swiper-button-prev {
     z-index: 1000;
 }
 
@@ -44,7 +46,9 @@ body {
 }
 
 .slide-banner-button-prev,
-.slide-banner-button-next {
+.slide-banner-button-next,
+.photo-examples .photo-examples-swiper-button-next,
+.photo-examples .photo-examples-swiper-button-prev {
     background-color: #36383F;
     border-radius: 50%;
     width: 40px !important;
@@ -53,7 +57,9 @@ body {
 }
 
 .slide-banner-button-prev::after,
-.slide-banner-button-next::after {
+.slide-banner-button-next::after,
+.photo-examples .photo-examples-swiper-button-next::after,
+.photo-examples .photo-examples-swiper-button-prev::after {
     font-size: 22px !important;
     text-align: center;
     margin: 0 auto;
@@ -285,4 +291,111 @@ body {
 .content-section .products-slide .swiper .products-slide-wrapper .product-card .product-info .product-actions
 .add-to-cart:hover svg path:last-child {
     stroke: #F04716;
+}
+
+.about h2,
+.about .short-about {
+    margin-bottom: 20px;
+}
+
+.short-about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.benefits .benefit {
+    width: 17%;
+    text-align: center;
+    padding: 45px 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.benefits .benefit img {
+    width: 54px;
+    height: 54px;
+}
+
+.benefits .benefit p {
+    font-size: 15px;
+    color: #36383F;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.examples {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.examples .photo-examples {
+    width: 49%;
+}
+
+.photo-examples .swiper-wrapper img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.photo-examples .photo-examples-swiper-navigation img {
+    height: 90px;
+}
+
+.photo-examples .photo-examples-swiper-main img {
+    height: 390px;
+    border-radius: 15px;
+}
+
+.photo-examples .swiper {
+    padding: 20px 0;
+}
+
+.examples-description {
+    width: 43%;
+    padding: 30px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.examples-description .description-list li {
+    list-style: inside;
+    color: #F04716;
+    margin-bottom: 15px;
+}
+
+.examples-description .description-list li span {
+    color: #6E7284;
+}
+
+.pay-and-delivery {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 90px 100px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.pay-and-delivery .block {
+    width: 45%;
+}
+
+.pay-and-delivery .block p {
+    color: #36383F;
+    margin-bottom: 20px;
+}
+
+.pay-and-delivery .block a {
+    color: #4788FF;
 }
