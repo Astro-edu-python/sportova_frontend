@@ -57,7 +57,11 @@ a.sale {
 .mid-header .first,
 .mid-header .third,
 .bottom-header .content,
-.bottom-header a {
+.bottom-header a,
+.contacts .contact-icons,
+.mid-header .third .button,
+.bottom-footer .content .logo,
+.bottom-footer .content {
     display: flex;
     align-items: center;
 }
@@ -185,8 +189,6 @@ a.sale {
 
 .mid-header .third .button {
     padding: 14px;
-    display: flex;
-    align-items: center;
     transition: 1s all ease;
 }
 
@@ -274,4 +276,92 @@ a.sale {
 .category-card p {
     color: #36383F;
     text-align: center;
+}
+
+footer .content h2 {
+    margin-bottom: 30px;
+}
+
+.upper-footer {
+    background-color: #1D1E22;
+    padding: 100px 0;
+}
+
+.upper-footer .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 15px;
+    color: white;
+}
+
+.upper-footer .contacts {
+    width: 18%;
+}
+
+.upper-footer .contacts a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.upper-footer a {
+    color: white;
+}
+
+.upper-footer a:hover {
+    color: #FFC62F;
+}
+
+.upper-footer .contacts p {
+    color: #A3A6B2;
+}
+
+.contacts .contact-icons {
+    justify-content: space-between;
+}
+
+.upper-footer .catalog {
+    width: 40%;
+}
+
+.upper-footer .catalog .catalog-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.upper-footer .catalog .catalog-items a {
+    display: inline-block;
+    flex: 1 0 40%;
+}
+
+.upper-footer .useful {
+    width: 20%;
+}
+
+.upper-footer .useful .useful-links a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.bottom-footer {
+    background-color: #111112;
+    padding: 40px 0;
+}
+
+.bottom-footer .content {
+    justify-content: space-between;
+}
+
+.bottom-footer .content .logo {
+    color: white;
+}
+
+.bottom-footer .content .logo img {
+    margin-right: 20px;
+}
+
+.copyright {
+    color: white;
 }
