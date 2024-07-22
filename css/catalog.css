@@ -1,0 +1,28 @@
+@import "base.css";
+
+.pay-and-delivery {
+    margin-bottom: 50px;
+}
+
+.catalog {
+    margin-top: 50px;
+}
+
+.catalog h2 {
+    margin-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.categories .category-card {
+    width: 20%;
+}
+
+.categories .category-card:not(:last-child) {
+    margin-right: 20px;
+}

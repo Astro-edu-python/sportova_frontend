@@ -7,6 +7,10 @@
     list-style: none;
 }
 
+body {
+    background-color: #F4F5F8;
+}
+
 a.header-top-link {
     color: #6E7284;
 }
@@ -34,6 +38,10 @@ a.sale {
 
 .container {
     margin: 0 370px 0 370px;
+}
+
+.content-section {
+    margin-bottom: 50px;
 }
 
 .top-header {
@@ -276,6 +284,76 @@ a.sale {
 .category-card p {
     color: #36383F;
     text-align: center;
+}
+
+.pay-and-delivery {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 90px 100px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.pay-and-delivery .block {
+    width: 45%;
+}
+
+.pay-and-delivery .block p {
+    color: #36383F;
+    margin-bottom: 20px;
+}
+
+.pay-and-delivery .block a {
+    color: #4788FF;
+}
+
+.mailing {
+    background-color: #0A4ECB;
+}
+
+.mailing .content {
+    padding: 75px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mailing .content .mailing-text,
+.mailing .content .mailing-form {
+    width: 47%;
+}
+
+.mailing .content .mailing-text h2 {
+    margin-bottom: 10px;
+}
+
+.mailing .content .mailing-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mailing .content .mailing-form input,
+.mailing .content .mailing-form button[type=submit] {
+    padding: 25px 35px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.mailing .content .mailing-form input {
+    width: 55%;
+    background-color: #04358F;
+    color: #DEDFE7;
+}
+
+.mailing .content .mailing-form button[type=submit] {
+    background-color: #FFC62F;
+    text-align: center;
+    color: #1D1E22;
+    font-weight: bold;
 }
 
 footer .content h2 {
