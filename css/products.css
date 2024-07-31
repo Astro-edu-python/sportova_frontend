@@ -1,0 +1,112 @@
+@import url("base.css");
+
+.products-section h2 {
+    margin: 50px 0;
+}
+
+.pay-and-delivery {
+    margin-bottom: 50px;
+}
+
+.products-section .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.products-section .content .products-filter {
+    width: 23%;
+}
+
+.products-section .content .products-list {
+    width: 72%;
+}
+
+.products-section .content .products-list .products {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products-section .products-list .products .product-card {
+    width: 27%;
+    margin-bottom: 25px;
+}
+
+.products-sort {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.products-sort p {
+    color: #6E7284;
+}
+
+.products-sort a {
+    color: #0A4ECB;
+}
+
+.products-sort p,
+.products-sort a {
+    margin-right: 25px;
+}
+
+.form-section {
+    margin-bottom: 40px;
+}
+
+.filter-form .form-section input {
+    margin-right: 10px;
+}
+
+.form-field .custom-checkbox .custom-checkbox-track {
+    margin-left: 10px;
+}
+
+.form-section h3 {
+    margin-bottom: 15px;
+}
+
+.form-field {
+    margin-bottom: 14px;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input[type=number] {
+  appearance: textfield;
+}
+
+.min-price,
+.max-price {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    background-color: white;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.min-price label,
+.max-price label {
+    margin-right: 5px;
+    color: #A3A6B2;
+    font-size: 12px;
+}
+
+#min-price,
+#max-price {
+    border: none;
+    background-color: inherit;
+    width: 100%;
+    color: black;
+    position: relative;
+}

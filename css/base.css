@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: "Roboto Light", sans-serif;
+    font-family: "Montserrat", "Roboto Light", sans-serif;
     outline: none;
     list-style: none;
 }
@@ -250,6 +250,28 @@ a.sale {
     background: linear-gradient(to right, #1D1E22 0%, #0A4ECB 100%);
 }
 
+.slide-pagination,
+.swiper-button-prev,
+.swiper-button-next {
+    z-index: 1000;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #36383F;
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
+    color: white !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 22px !important;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .old-price {
     text-decoration: line-through;
 }
@@ -284,6 +306,101 @@ a.sale {
 .category-card p {
     color: #36383F;
     text-align: center;
+}
+
+.product-card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+    position: relative;
+}
+
+.product-card .add-to-favorite {
+    position: absolute;
+    right: 16px;
+    border: 1px solid #DEDFE7;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.product-card .add-to-favorite:hover {
+    background-color: #F04716;
+    border: none;
+}
+
+.product-card .add-to-favorite:hover path:first-child {
+    stroke: white;
+}
+
+.product-card .add-to-favorite:hover path:last-child {
+    fill: white;
+    stroke: #F04716;
+}
+
+.product-card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.product-card img {
+    max-width: 100%;
+    max-height: 340px;
+    margin-bottom: 10px;
+}
+
+.product-card .product-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.product-card .product-info > p {
+    color: #36383F;
+    margin-bottom: 35px;
+    transition: all .3s ease-in-out;
+}
+
+.product-card:hover .product-info > p {
+    color: #0A4ECB;
+}
+
+.add-to-cart svg {
+    width: 50px;
+    height: 50px;
+}
+
+.product-card .product-info .product-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-card .product-info .product-actions .product-prices p:first-child {
+    color: #A3A6B2;
+}
+
+
+.product-card .product-info .product-actions .product-prices p:last-child {
+    color: #36383F;
+}
+
+.product-card .product-info .product-actions .add-to-cart svg {
+    border: 1px solid #DEDFE7;
+    border-radius: 10px;
+}
+
+.product-card .product-info .product-actions .add-to-cart:hover svg {
+    background-color: #F04716;
+    border: 1px solid #F04716;
+}
+
+.product-card .product-info .product-actions .add-to-cart:hover svg path {
+    fill: white;
+}
+
+.product-card .product-info .product-actions .add-to-cart:hover svg path:last-child {
+    stroke: #F04716;
 }
 
 .pay-and-delivery {
@@ -442,4 +559,91 @@ footer .content h2 {
 
 .copyright {
     color: white;
+}
+
+.form-section h3 {
+    color: #36383F;
+    font-size: 18px;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+}
+
+form input:checked + label {
+    color: #252543;
+}
+
+form input + label {
+    color: #6E7284;
+}
+
+form input[type=checkbox],
+form input[type=radio] {
+    accent-color: #235AD9;
+}
+
+.custom-checkbox {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+}
+
+.custom-checkbox__input {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.custom-checkbox__input:not([disabled]):active + .custom-checkbox-track,
+.custom-checkbox__input:not([disabled]):focus + .custom-checkbox-track {
+    border: 1px solid transparent;
+    box-shadow: 0 0 0 2px #235AD9;
+}
+
+.custom-checkbox__input:disabled + .custom-checkbox-track {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.custom-checkbox-track {
+    background: #DEDFE7;
+    border: 1px solid #afafb0;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    height: 20px;
+    margin-right: 12px;
+    position: relative;
+    width: 40px;
+}
+
+.custom-checkbox__input:checked + .custom-checkbox-track {
+    border-color: #235AD9;
+    background-color: #235AD9;
+}
+
+.custom-checkbox-indicator {
+    align-items: center;
+    background: white;
+    border-radius: 24px;
+    bottom: 4px;
+    display: flex;
+    height: 12px;
+    justify-content: center;
+    left: 2px;
+    outline: solid 2px transparent;
+    position: absolute;
+    transition: 0.25s;
+    width: 12px;
+}
+
+.custom-checkbox__input:checked + .custom-checkbox-track .custom-checkbox-indicator {
+    background: white;
+    transform: translateX(25px);
 }

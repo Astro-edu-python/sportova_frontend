@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+          rel="stylesheet">
+    <title>Главная страница</title>
+</head>
+<body>
+<header class="header">
+    <div class="top-header">
+        <div class="content container">
+            <div class="first">
+                <div class="address">
+                    <img src="../img/svg/city.svg" alt="address icon">
+                    <span>Ташкент</span>
+                </div>
+            </div>
+            <div class="second">
+                <a href="../index.html" class="header-top-link active">Главная</a>
+                <a href="#!" class="header-top-link">Как заказать</a>
+                <a href="#!" class="header-top-link">О компании</a>
+                <a href="#!" class="header-top-link">Доставка и оплата</a>
+                <a href="#!" class="header-top-link">Гарантии</a>
+                <a href="#!" class="header-top-link">Контакты</a>
+            </div>
+            <div class="third">
+                <p>8800 550-22-16</p>
+                <a href="tel:+392178321" class="call">Позвонить</a>
+            </div>
+        </div>
+    </div>
+    <div class="mid-header container">
+        <div class="first">
+            <img src="../img/svg/logo.svg" alt="Logo"/>
+            <div>
+                <h1 class="site-name">SPORTOVA</h1>
+                <p class="site-description">Спортивные комплексы</p>
+            </div>
+        </div>
+        <form class="second">
+            <img src="../img/svg/search.svg" alt="search"/>
+            <input type="search" class="search" name="product" required/>
+            <button class="submit" type="submit" style="display: none">Найти</button>
+        </form>
+        <div class="third">
+            <a href="#!" class="button favorite">
+                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 3.98893C10 -0.507481 1 -0.259282 1 6.99252C1 13.3378 7.5 17 12 19C16.5 17 23 13.3379 23 6.99252C23 -0.259277 14 -0.507472 12 3.98893Z"
+                          stroke="#6E7284"/>
+                </svg>
+            </a>
+            <a href="#!" class="button cart">
+                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0 0.5C0 0.223858 0.223858 0 0.5 0H3.5C3.72943 0 3.92943 0.156149 3.98507 0.378732L4.89039 4H21.5C21.6591 4 21.8086 4.07568 21.9028 4.20383C21.9971 4.33198 22.0247 4.49732 21.9772 4.64914L19.4772 12.6491C19.412 12.8579 19.2187 13 19 13H6.5C6.27057 13 6.07057 12.8439 6.01493 12.6213L3.10961 1H0.5C0.223858 1 0 0.776142 0 0.5ZM5.14039 5L6.89039 12H18.6324L20.8199 5H5.14039Z"
+                          fill="#6E7284"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8.5 18C9.32843 18 10 17.3284 10 16.5C10 15.6716 9.32843 15 8.5 15C7.67157 15 7 15.6716 7 16.5C7 17.3284 7.67157 18 8.5 18ZM8.5 19C9.88071 19 11 17.8807 11 16.5C11 15.1193 9.88071 14 8.5 14C7.11929 14 6 15.1193 6 16.5C6 17.8807 7.11929 19 8.5 19Z"
+                          fill="#6E7284"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.5 18C17.3284 18 18 17.3284 18 16.5C18 15.6716 17.3284 15 16.5 15C15.6716 15 15 15.6716 15 16.5C15 17.3284 15.6716 18 16.5 18ZM16.5 19C17.8807 19 19 17.8807 19 16.5C19 15.1193 17.8807 14 16.5 14C15.1193 14 14 15.1193 14 16.5C14 17.8807 15.1193 19 16.5 19Z"
+                          fill="#6E7284"/>
+                </svg>
+                <p>Корзина <span class="cart-products-count">(0)</span></p>
+            </a>
+        </div>
+    </div>
+    <div class="bottom-header">
+        <div class="content container">
+            <div class="dropdown">
+                <img src="../img/svg/burger-menu.svg" class="burger" alt="burger">
+                <img src="../img/svg/close.svg" class="close not-visible" alt="close">
+                <span>Каталог товаров</span>
+                <img src="../img/svg/down.svg" class="down" alt="down">
+                <img src="../img/svg/up.svg" class="up not-visible" alt="up">
+                <div class="dropdown-menu not-visible">
+                    <a href="#!">Что-то</a>
+                    <a href="#!">Что-то 2</a>
+                    <a href="#!">Что-то 3</a>
+                </div>
+            </div>
+            <a class="bottom-header-link" href="#!">Категория 1</a>
+            <a class="bottom-header-link" href="#!">Категория 2</a>
+            <a class="bottom-header-link" href="#!">Категория 3</a>
+            <a class="bottom-header-link" href="#!">Категория 3</a>
+            <a class="bottom-header-link sale" href="#!">Скидки %</a>
+        </div>
+    </div>
+</header>
+
+<section class="products-section container content-section">
+    <h2>Категория товара</h2>
+    <div class="content">
+        <div class="products-filter">
+            <form action="#!" class="filter-form" method="get">
+                <div class="form-section">
+                    <h3>Для кого</h3>
+                    <div class="form-field">
+                        <input type="checkbox" name="for" value="family" id="family" class="form-input-checkbox">
+                        <label for="family">Вся семья</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="checkbox" name="for" value="adult" id="adult" class="form-input-checkbox">
+                        <label for="adult">Взрослые</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="checkbox" name="for" value="child" id="child" class="form-input-checkbox">
+                        <label for="child">Детские</label>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h3>Цена</h3>
+                    <div class="prices">
+                        <div class="min-price">
+                            <label for="min-price">от($)</label>
+                            <input type="number" class="range-price-value" id="min-price" value="5"/>
+                        </div>
+                        <div class="max-price">
+                            <label for="max-price">до($)</label>
+                            <input type="number" class="range-price-value" id="max-price" value="5000"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div class="form-field">
+                        <label for="discount" class="custom-checkbox">
+                            Распродажа
+                            <input type="checkbox" id="discount" class="custom-checkbox__input"/>
+                            <span class="custom-checkbox-track">
+                                <span class="custom-checkbox-indicator"></span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h3>Цвет стенки</h3>
+                    <div class="form-field">
+                        <input type="checkbox" name="color" value="antic" id="antic" class="form-input-checkbox">
+                        <label for="antic">Антик-серебро</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="checkbox" name="color" value="white" id="white" class="form-input-checkbox">
+                        <label for="white">Бежевый</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="checkbox" name="color" value="white-yellow" id="white-yellow"
+                               class="form-input-checkbox">
+                        <label for="white-yellow">Белый, желтый</label>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h3>Макс.нагрузка</h3>
+                    <div class="form-field">
+                        <input type="checkbox" name="color" value="antic" id="child-80kg" class="form-input-checkbox">
+                        <label for="child-80kg">Детский, до 80 кг</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="checkbox" name="color" value="white" id="teen-100kg" class="form-input-checkbox">
+                        <label for="teen-100kg">Подростки, до 100 кг</label>
+                    </div>
+                    <div class="form-field">
+                        <input type="checkbox" name="color" value="white-yellow" id="adult-120kg"
+                               class="form-input-checkbox">
+                        <label for="adult-120kg">Взрослый, до 120 кг</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="products-list">
+            <div class="products-sort">
+                <p>Сортировать по:</p>
+                <a href="#!">Популярности</a>
+                <a href="#!">Цене</a>
+                <a href="#!">Размеру скидки</a>
+            </div>
+            <div class="products">
+                <div class="product-card">
+                    <img src="../img/product1.jpg" alt="slide 1">
+                    <svg class="add-to-favorite not-visible" width="54" height="54" viewBox="0 0 54 50" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27 16.9889C25 12.4925 16 12.7407 16 19.9925C16 26.3378 22.5 30 27 32C31.5 30 38 26.3379 38 19.9925C38 12.7407 29 12.4925 27 16.9889Z"
+                              stroke="#F04716"/>
+                        <path d="M38 17.5C38 16.6716 37.3284 16 36.5 16C35.6716 16 35 16.6716 35 17.5V19H33.5C32.6716 19 32 19.6716 32 20.5C32 21.3284 32.6716 22 33.5 22H35V23.5C35 24.3284 35.6716 25 36.5 25C37.3284 25 38 24.3284 38 23.5V22H39.5C40.3284 22 41 21.3284 41 20.5C41 19.6716 40.3284 19 39.5 19H38V17.5Z"
+                              fill="#F04716" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <div class="product-info">
+                        <p>Шведская стенка P-19 (Цвет: Белый)</p>
+                        <div class="product-actions">
+                            <div class="product-prices">
+                                <p class="product-price old-price">11000 $</p>
+                                <p class="product-price-action">9000 $</p>
+                            </div>
+                            <p class="add-to-cart">
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M10 14.5C10 14.2239 10.2239 14 10.5 14H13.5C13.7294 14 13.9294 14.1561 13.9851 14.3787L14.8904 18H31.5C31.6591 18 31.8086 18.0757 31.9028 18.2038C31.9971 18.332 32.0247 18.4973 31.9772 18.6491L29.4772 26.6491C29.412 26.8579 29.2187 27 29 27H16.5C16.2706 27 16.0706 26.8439 16.0149 26.6213L13.1096 15H10.5C10.2239 15 10 14.7761 10 14.5ZM15.1404 19L16.8904 26H28.6324L30.8199 19H15.1404Z"
+                                          fill="#F04716"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M18.5 32C19.3284 32 20 31.3284 20 30.5C20 29.6716 19.3284 29 18.5 29C17.6716 29 17 29.6716 17 30.5C17 31.3284 17.6716 32 18.5 32ZM18.5 33C19.8807 33 21 31.8807 21 30.5C21 29.1193 19.8807 28 18.5 28C17.1193 28 16 29.1193 16 30.5C16 31.8807 17.1193 33 18.5 33Z"
+                                          fill="#F04716"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M26.5 32C27.3284 32 28 31.3284 28 30.5C28 29.6716 27.3284 29 26.5 29C25.6716 29 25 29.6716 25 30.5C25 31.3284 25.6716 32 26.5 32ZM26.5 33C27.8807 33 29 31.8807 29 30.5C29 29.1193 27.8807 28 26.5 28C25.1193 28 24 29.1193 24 30.5C24 31.8807 25.1193 33 26.5 33Z"
+                                          fill="#F04716"/>
+                                    <path d="M32 15.5C32 14.6716 31.3284 14 30.5 14C29.6716 14 29 14.6716 29 15.5V17H27.5C26.6716 17 26 17.6716 26 18.5C26 19.3284 26.6716 20 27.5 20H29V21.5C29 22.3284 29.6716 23 30.5 23C31.3284 23 32 22.3284 32 21.5V20H33.5C34.3284 20 35 19.3284 35 18.5C35 17.6716 34.3284 17 33.5 17H32V15.5Z"
+                                          fill="#F04716" stroke="white" stroke-width="2"/>
+                                </svg>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../img/product1.jpg" alt="slide 1">
+                    <svg class="add-to-favorite not-visible" width="54" height="54" viewBox="0 0 54 50" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27 16.9889C25 12.4925 16 12.7407 16 19.9925C16 26.3378 22.5 30 27 32C31.5 30 38 26.3379 38 19.9925C38 12.7407 29 12.4925 27 16.9889Z"
+                              stroke="#F04716"/>
+                        <path d="M38 17.5C38 16.6716 37.3284 16 36.5 16C35.6716 16 35 16.6716 35 17.5V19H33.5C32.6716 19 32 19.6716 32 20.5C32 21.3284 32.6716 22 33.5 22H35V23.5C35 24.3284 35.6716 25 36.5 25C37.3284 25 38 24.3284 38 23.5V22H39.5C40.3284 22 41 21.3284 41 20.5C41 19.6716 40.3284 19 39.5 19H38V17.5Z"
+                              fill="#F04716" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <div class="product-info">
+                        <p>Шведская стенка P-19 (Цвет: Белый)</p>
+                        <div class="product-actions">
+                            <div class="product-prices">
+                                <p class="product-price old-price">11000 $</p>
+                                <p class="product-price-action">9000 $</p>
+                            </div>
+                            <p class="add-to-cart">
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M10 14.5C10 14.2239 10.2239 14 10.5 14H13.5C13.7294 14 13.9294 14.1561 13.9851 14.3787L14.8904 18H31.5C31.6591 18 31.8086 18.0757 31.9028 18.2038C31.9971 18.332 32.0247 18.4973 31.9772 18.6491L29.4772 26.6491C29.412 26.8579 29.2187 27 29 27H16.5C16.2706 27 16.0706 26.8439 16.0149 26.6213L13.1096 15H10.5C10.2239 15 10 14.7761 10 14.5ZM15.1404 19L16.8904 26H28.6324L30.8199 19H15.1404Z"
+                                          fill="#F04716"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M18.5 32C19.3284 32 20 31.3284 20 30.5C20 29.6716 19.3284 29 18.5 29C17.6716 29 17 29.6716 17 30.5C17 31.3284 17.6716 32 18.5 32ZM18.5 33C19.8807 33 21 31.8807 21 30.5C21 29.1193 19.8807 28 18.5 28C17.1193 28 16 29.1193 16 30.5C16 31.8807 17.1193 33 18.5 33Z"
+                                          fill="#F04716"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M26.5 32C27.3284 32 28 31.3284 28 30.5C28 29.6716 27.3284 29 26.5 29C25.6716 29 25 29.6716 25 30.5C25 31.3284 25.6716 32 26.5 32ZM26.5 33C27.8807 33 29 31.8807 29 30.5C29 29.1193 27.8807 28 26.5 28C25.1193 28 24 29.1193 24 30.5C24 31.8807 25.1193 33 26.5 33Z"
+                                          fill="#F04716"/>
+                                    <path d="M32 15.5C32 14.6716 31.3284 14 30.5 14C29.6716 14 29 14.6716 29 15.5V17H27.5C26.6716 17 26 17.6716 26 18.5C26 19.3284 26.6716 20 27.5 20H29V21.5C29 22.3284 29.6716 23 30.5 23C31.3284 23 32 22.3284 32 21.5V20H33.5C34.3284 20 35 19.3284 35 18.5C35 17.6716 34.3284 17 33.5 17H32V15.5Z"
+                                          fill="#F04716" stroke="white" stroke-width="2"/>
+                                </svg>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../img/product1.jpg" alt="slide 1">
+                    <svg class="add-to-favorite not-visible" width="54" height="54" viewBox="0 0 54 50" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27 16.9889C25 12.4925 16 12.7407 16 19.9925C16 26.3378 22.5 30 27 32C31.5 30 38 26.3379 38 19.9925C38 12.7407 29 12.4925 27 16.9889Z"
+                              stroke="#F04716"/>
+                        <path d="M38 17.5C38 16.6716 37.3284 16 36.5 16C35.6716 16 35 16.6716 35 17.5V19H33.5C32.6716 19 32 19.6716 32 20.5C32 21.3284 32.6716 22 33.5 22H35V23.5C35 24.3284 35.6716 25 36.5 25C37.3284 25 38 24.3284 38 23.5V22H39.5C40.3284 22 41 21.3284 41 20.5C41 19.6716 40.3284 19 39.5 19H38V17.5Z"
+                              fill="#F04716" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <div class="product-info">
+                        <p>Шведская стенка P-19 (Цвет: Белый)</p>
+                        <div class="product-actions">
+                            <div class="product-prices">
+                                <p class="product-price old-price">11000 $</p>
+                                <p class="product-price-action">9000 $</p>
+                            </div>
+                            <p class="add-to-cart">
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M10 14.5C10 14.2239 10.2239 14 10.5 14H13.5C13.7294 14 13.9294 14.1561 13.9851 14.3787L14.8904 18H31.5C31.6591 18 31.8086 18.0757 31.9028 18.2038C31.9971 18.332 32.0247 18.4973 31.9772 18.6491L29.4772 26.6491C29.412 26.8579 29.2187 27 29 27H16.5C16.2706 27 16.0706 26.8439 16.0149 26.6213L13.1096 15H10.5C10.2239 15 10 14.7761 10 14.5ZM15.1404 19L16.8904 26H28.6324L30.8199 19H15.1404Z"
+                                          fill="#F04716"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M18.5 32C19.3284 32 20 31.3284 20 30.5C20 29.6716 19.3284 29 18.5 29C17.6716 29 17 29.6716 17 30.5C17 31.3284 17.6716 32 18.5 32ZM18.5 33C19.8807 33 21 31.8807 21 30.5C21 29.1193 19.8807 28 18.5 28C17.1193 28 16 29.1193 16 30.5C16 31.8807 17.1193 33 18.5 33Z"
+                                          fill="#F04716"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M26.5 32C27.3284 32 28 31.3284 28 30.5C28 29.6716 27.3284 29 26.5 29C25.6716 29 25 29.6716 25 30.5C25 31.3284 25.6716 32 26.5 32ZM26.5 33C27.8807 33 29 31.8807 29 30.5C29 29.1193 27.8807 28 26.5 28C25.1193 28 24 29.1193 24 30.5C24 31.8807 25.1193 33 26.5 33Z"
+                                          fill="#F04716"/>
+                                    <path d="M32 15.5C32 14.6716 31.3284 14 30.5 14C29.6716 14 29 14.6716 29 15.5V17H27.5C26.6716 17 26 17.6716 26 18.5C26 19.3284 26.6716 20 27.5 20H29V21.5C29 22.3284 29.6716 23 30.5 23C31.3284 23 32 22.3284 32 21.5V20H33.5C34.3284 20 35 19.3284 35 18.5C35 17.6716 34.3284 17 33.5 17H32V15.5Z"
+                                          fill="#F04716" stroke="white" stroke-width="2"/>
+                                </svg>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../img/product1.jpg" alt="slide 1">
+                    <svg class="add-to-favorite not-visible" width="54" height="54" viewBox="0 0 54 50" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27 16.9889C25 12.4925 16 12.7407 16 19.9925C16 26.3378 22.5 30 27 32C31.5 30 38 26.3379 38 19.9925C38 12.7407 29 12.4925 27 16.9889Z"
+                              stroke="#F04716"/>
+                        <path d="M38 17.5C38 16.6716 37.3284 16 36.5 16C35.6716 16 35 16.6716 35 17.5V19H33.5C32.6716 19 32 19.6716 32 20.5C32 21.3284 32.6716 22 33.5 22H35V23.5C35 24.3284 35.6716 25 36.5 25C37.3284 25 38 24.3284 38 23.5V22H39.5C40.3284 22 41 21.3284 41 20.5C41 19.6716 40.3284 19 39.5 19H38V17.5Z"
+                              fill="#F04716" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <div class="product-info">
+                        <p>Шведская стенка P-19 (Цвет: Белый)</p>
+                        <div class="product-actions">
+                            <div class="product-prices">
+                                <p class="product-price old-price">11000 $</p>
+                                <p class="product-price-action">9000 $</p>
+                            </div>
+                            <p class="add-to-cart">
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M10 14.5C10 14.2239 10.2239 14 10.5 14H13.5C13.7294 14 13.9294 14.1561 13.9851 14.3787L14.8904 18H31.5C31.6591 18 31.8086 18.0757 31.9028 18.2038C31.9971 18.332 32.0247 18.4973 31.9772 18.6491L29.4772 26.6491C29.412 26.8579 29.2187 27 29 27H16.5C16.2706 27 16.0706 26.8439 16.0149 26.6213L13.1096 15H10.5C10.2239 15 10 14.7761 10 14.5ZM15.1404 19L16.8904 26H28.6324L30.8199 19H15.1404Z"
+                                          fill="#F04716"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M18.5 32C19.3284 32 20 31.3284 20 30.5C20 29.6716 19.3284 29 18.5 29C17.6716 29 17 29.6716 17 30.5C17 31.3284 17.6716 32 18.5 32ZM18.5 33C19.8807 33 21 31.8807 21 30.5C21 29.1193 19.8807 28 18.5 28C17.1193 28 16 29.1193 16 30.5C16 31.8807 17.1193 33 18.5 33Z"
+                                          fill="#F04716"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M26.5 32C27.3284 32 28 31.3284 28 30.5C28 29.6716 27.3284 29 26.5 29C25.6716 29 25 29.6716 25 30.5C25 31.3284 25.6716 32 26.5 32ZM26.5 33C27.8807 33 29 31.8807 29 30.5C29 29.1193 27.8807 28 26.5 28C25.1193 28 24 29.1193 24 30.5C24 31.8807 25.1193 33 26.5 33Z"
+                                          fill="#F04716"/>
+                                    <path d="M32 15.5C32 14.6716 31.3284 14 30.5 14C29.6716 14 29 14.6716 29 15.5V17H27.5C26.6716 17 26 17.6716 26 18.5C26 19.3284 26.6716 20 27.5 20H29V21.5C29 22.3284 29.6716 23 30.5 23C31.3284 23 32 22.3284 32 21.5V20H33.5C34.3284 20 35 19.3284 35 18.5C35 17.6716 34.3284 17 33.5 17H32V15.5Z"
+                                          fill="#F04716" stroke="white" stroke-width="2"/>
+                                </svg>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../img/product1.jpg" alt="slide 1">
+                    <svg class="add-to-favorite not-visible" width="54" height="54" viewBox="0 0 54 50" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27 16.9889C25 12.4925 16 12.7407 16 19.9925C16 26.3378 22.5 30 27 32C31.5 30 38 26.3379 38 19.9925C38 12.7407 29 12.4925 27 16.9889Z"
+                              stroke="#F04716"/>
+                        <path d="M38 17.5C38 16.6716 37.3284 16 36.5 16C35.6716 16 35 16.6716 35 17.5V19H33.5C32.6716 19 32 19.6716 32 20.5C32 21.3284 32.6716 22 33.5 22H35V23.5C35 24.3284 35.6716 25 36.5 25C37.3284 25 38 24.3284 38 23.5V22H39.5C40.3284 22 41 21.3284 41 20.5C41 19.6716 40.3284 19 39.5 19H38V17.5Z"
+                              fill="#F04716" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <div class="product-info">
+                        <p>Шведская стенка P-19 (Цвет: Белый)</p>
+                        <div class="product-actions">
+                            <div class="product-prices">
+                                <p class="product-price old-price">11000 $</p>
+                                <p class="product-price-action">9000 $</p>
+                            </div>
+                            <p class="add-to-cart">
+                                <svg width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M10 14.5C10 14.2239 10.2239 14 10.5 14H13.5C13.7294 14 13.9294 14.1561 13.9851 14.3787L14.8904 18H31.5C31.6591 18 31.8086 18.0757 31.9028 18.2038C31.9971 18.332 32.0247 18.4973 31.9772 18.6491L29.4772 26.6491C29.412 26.8579 29.2187 27 29 27H16.5C16.2706 27 16.0706 26.8439 16.0149 26.6213L13.1096 15H10.5C10.2239 15 10 14.7761 10 14.5ZM15.1404 19L16.8904 26H28.6324L30.8199 19H15.1404Z"
+                                          fill="#F04716"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M18.5 32C19.3284 32 20 31.3284 20 30.5C20 29.6716 19.3284 29 18.5 29C17.6716 29 17 29.6716 17 30.5C17 31.3284 17.6716 32 18.5 32ZM18.5 33C19.8807 33 21 31.8807 21 30.5C21 29.1193 19.8807 28 18.5 28C17.1193 28 16 29.1193 16 30.5C16 31.8807 17.1193 33 18.5 33Z"
+                                          fill="#F04716"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M26.5 32C27.3284 32 28 31.3284 28 30.5C28 29.6716 27.3284 29 26.5 29C25.6716 29 25 29.6716 25 30.5C25 31.3284 25.6716 32 26.5 32ZM26.5 33C27.8807 33 29 31.8807 29 30.5C29 29.1193 27.8807 28 26.5 28C25.1193 28 24 29.1193 24 30.5C24 31.8807 25.1193 33 26.5 33Z"
+                                          fill="#F04716"/>
+                                    <path d="M32 15.5C32 14.6716 31.3284 14 30.5 14C29.6716 14 29 14.6716 29 15.5V17H27.5C26.6716 17 26 17.6716 26 18.5C26 19.3284 26.6716 20 27.5 20H29V21.5C29 22.3284 29.6716 23 30.5 23C31.3284 23 32 22.3284 32 21.5V20H33.5C34.3284 20 35 19.3284 35 18.5C35 17.6716 34.3284 17 33.5 17H32V15.5Z"
+                                          fill="#F04716" stroke="white" stroke-width="2"/>
+                                </svg>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="pay-and-delivery container">
+    <div class="block delivery">
+        <h2>Доставка</h2>
+        <p>
+            Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели
+            превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову,
+            свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось
+            готовое вот-вот окончательно сползти одеяло.
+        </p>
+        <a href="#!">Детальное описание</a>
+    </div>
+    <div class="block pay">
+        <h2>Оплата</h2>
+        <p>
+            Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели
+            превратился в страшное насекомое.
+            Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый,
+            разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот
+            окончательно сползти одеяло.
+        </p>
+        <a href="#!">Детальное описание</a>
+    </div>
+</div>
+
+<section class="mailing">
+    <div class="content container">
+        <div class="mailing-text">
+            <h2>Редкие, но очень полезные письма!</h2>
+            <p>Подпишись и получи промокод на скидку! Его можно применить ко всем товарам в магазине</p>
+        </div>
+        <form action="#!" method="post" class="mailing-form">
+            <input type="email" placeholder="Ваш e-mail">
+            <button type="submit">Подписаться</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="upper-footer">
+        <div class="content container">
+            <div class="contacts">
+                <h2>Контакты</h2>
+                <a href="#!">г. Нижний Новгород, ул.Народная, 20</a>
+                <a href="tel:8 (800) 550-22-16">8 (800) 550-22-16</a>
+                <a href="#!">info@sportova.ru</a>
+                <p>Sportova на связи:</p>
+                <div class="contact-icons">
+                    <a href="#!"><img src="../img/svg/telegram.svg" alt="tg icon" class="social-icon"></a>
+                    <a href="#!"><img src="../img/svg/insta.svg" alt="insta icon" class="social-icon"></a>
+                    <a href="#!"><img src="../img/svg/viber.svg" alt="viber icon" class="social-icon"></a>
+                    <a href="#!"><img src="../img/svg/whatsapp.svg" alt="whatsapp icon" class="social-icon"></a>
+                    <a href="#!"><img src="../img/svg/vk.svg" alt="vk icon" class="social-icon"></a>
+                </div>
+            </div>
+            <div class="catalog">
+                <h2>Каталог</h2>
+                <div class="catalog-items">
+                    <a href="#!">Шведские стенки</a>
+                    <a href="#!">Турники</a>
+                    <a href="#!">Уличные комплексы</a>
+                    <a href="#!">Тяжелая атлетика</a>
+                    <a href="#!">Единоборства</a>
+                    <a href="#!">Тюбинги</a>
+                    <a href="#!">Игровые домики</a>
+                    <a href="#!">Фитнес</a>
+                    <a href="#!">Скамьи и стойки под штангу</a>
+                    <a href="#!">Сухие бассейны</a>
+                    <a href="#!">Батуты</a>
+                    <a href="#!">Новогодние елки</a>
+                </div>
+            </div>
+            <div class="useful">
+                <h2>Полезное</h2>
+                <div class="useful-links">
+                    <a href="#!">Обратная связь</a>
+                    <a href="#!">Акции и скидки</a>
+                    <a href="#!">Доставка и оплата</a>
+                    <a href="#!">О нас</a>
+                    <a href="#!">Контакты</a>
+                    <a href="#!">Политика сайта</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <div class="content container">
+            <div class="logo">
+                <img src="../img/svg/logo-white.svg" alt="Logo"/>
+                <div>
+                    <h1 class="site-name">SPORTOVA</h1>
+                    <p class="site-description">Спортивные комплексы</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© ООО «Спортова», 2021</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
